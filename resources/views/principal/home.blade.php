@@ -6,40 +6,9 @@
 @section('canonical', config('app.url'))
 @section('class', 'home')
 @section('content')
-    <section class="mt-16">
-        <h1 class="h2 text-center mb-8">Padrón Municipal de Agentes Culturales</h1>
-    </section>
-    <section class="section section-welcome" style="border-bottom: 1px solid #dcdcdc;">
-        <div class="container">
-            <p>
-                Bienvenido al Padrón Municipal de Agentes Culturales, es muy importante para nosotros conocer tu actividad y aportes a la Cultura de Durango, con ello logramos tener la información real de aquellos que dedican su tiempo y conocimiento a enriquecer el quehacer cultural de nuestra comunidad.
-            </p>
-            <p>
-                Este padrón representa un censo específico de los actores culturales, clasificando en él tu actividad, categoría de desarrollo y trayectoria, a su vez, esta herramienta te facilitará acceder a beneficios municipales creados para incentivar, reconocer y fomentar tu desarrollo.
-            </p>
-            <p>
-                <strong>Requisitos y criterios de incorporación:</strong>
-            </p>
-
-            <ol class="list-spaced">
-                <li>
-                    Haber nacido o residir en el Municipio de Durango por período comprobable de al menos dos años a la fecha de la solicitud de incorporación.
-                </li>
-                <li>
-                    Ser artista profesional, promotor o gestor cultural.
-                </li>
-                <li>
-                    Ingresar en la plataforma los datos requeridos.
-                </li>
-            </ol>
-        </div>
-    </section>
     <section class="section">
         <div class="container">
-            <h2 class="h2 text-center mb-8">Registro</h2>
-            @alert(['class' => 'alert--has-icon size-caption'])
-            @endalert
-
+            <h2 class="h2 text-center mb-8">Cuestionario para detectar TDAH en niños</h2>
             <div>
                 <login-form action="{{ url('registro-artistas') }}"
                     enctype="multipart/form-data"
@@ -48,8 +17,8 @@
                 >
                     <form>
                         <div class="form-group">
-                            <div class="form-group__title">
-                                Datos personales
+                            <div class="form-group__title" aria-description="Pregunta 1">
+                                Pregunta 1
                             </div>
                             <div class="form-control">
                                 <label for="full_name">Nombre completo</label>
@@ -93,18 +62,18 @@
                         </div>
                         <div class="form-group">
                             <div class="form-group__title">
-                                Datos profesionales
+                                Pregunta 2
                             </div>
                             <div class="row">
                                 <div class="col lg:col-1/2 form-control">
                                     <label for="activity">Actividad en la que se desarrolla principalmente:</label>
-                                    <select-field name="activity"  v-model="fields.activity" :options="{{ $activities }}">
+                                    <select-field name="activity"  v-model="fields.activity">
                                     </select-field>
                                     <field-errors name="activity"></field-errors>
                                 </div>
                                 <div class="col lg:col-1/2 form-control">
                                     <label for="category">Categoría:</label>
-                                    <select-field name="category"  v-model="fields.category" :options="{{ $categories}}">
+                                    <select-field name="category"  v-model="fields.category">
                                     </select-field>
                                     <field-errors name="category"></field-errors>
                                 </div>

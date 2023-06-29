@@ -2427,9 +2427,9 @@ var render = function render() {
     }
   })]), _vm._v(" "), _vm.breakpointMatches ? _c("p", {
     staticClass: "main-header-text"
-  }, [_vm._v("\n            Sistema Gestor de Inventario y Préstamos\n        ")]) : _c("p", {
+  }, [_vm._v("\n            TDAH\n        ")]) : _c("p", {
     staticClass: "main-header-text"
-  }, [_vm._v("\n            Sistema Gestor de Inventario y Préstamos\n        ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n            TDAH\n        ")]), _vm._v(" "), _c("div", {
     staticClass: "login-container"
   }, [_vm._t("button-session")], 2)])]);
 };

@@ -23,7 +23,7 @@ use App\Http\Controllers\Admin\AssignmentController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('principal.home');
 });
 
 Auth::routes();

@@ -5,10 +5,10 @@
                 <img class="main-header__logo-img" :src="logo" alt="">
             </a>
             <p v-if="breakpointMatches" class="main-header-text">
-                Sistema Gestor de Inventario y Préstamos
+                TDAH
             </p>
             <p v-else class="main-header-text">
-                Sistema Gestor de Inventario y Préstamos
+                TDAH
             </p>
             <div class="login-container">
                 <slot name="button-session"></slot>
