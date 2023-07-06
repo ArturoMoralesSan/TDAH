@@ -18,69 +18,94 @@
                     <form>
                         <div class="form-group">
                             <div class="form-group__title" aria-description="Pregunta 1">
-                                Pregunta 1
+                                Pregunta 1: ¿Puedes mostrarme el color rojo?
                             </div>
                             <div class="form-control">
-                                <label for="full_name">Nombre completo</label>
-                                <text-field name="full_name" v-model="fields.full_name" maxlength="160" placeholder="" initial=""></text-field>
-                                <field-errors name="full_name"></field-errors>
+                                <img src="{{ asset('img/Circule_Red.jpg') }}">
+                                <img src="">
+                                <img src="">
                             </div>
-                            <div class="form-control">
-                                <label for="photo" v-text="'Fotografia artística'"></label>
-                                <file-field name="photo" v-model="fields.photo" aria-describedby="photo-specs"></file-field>
-                                <field-errors name="photo"></field-errors>
-                                <ul id="photo-specs" class="description">
-                                    <li>
-                                        Sólo imágenes de tipo: jpeg, gif, png.
-                                    </li>
-                                    <li>
-                                         El archivo no debe exceder 2 MB.
-                                    </li>
-                                </ul>
+                           
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 2: ¿Puedes mostrarme un color amarillo que este en la pantalla?
                             </div>
-                            <div class="form-control">
-                                <label for="email">Correo electrónico</label>
-                                <text-field name="email" type="email" v-model="fields.email" maxlength="60" placeholder="" initial=""></text-field>
-                                <field-errors name="email"></field-errors>
-                            </div>
-                            <div class="form-control">
-                                <label for="password">Contraseña</label>
-                                <text-field name="password" type="password" v-model="fields.password" maxlength="60" placeholder="" initial=""></text-field>
-                                <field-errors name="password"></field-errors>
-                            </div>
-                            {{-- Password confirmation --}}
-                            <div class="form-control">
-                                <label for="password-confirmation">Confirmar contraseña</label>
-
-                                <text-field v-model="fields.password_confirmation"
-                                    name="password_confirmation"
-                                    maxlength="60"
-                                    type="password"
-                                ></text-field>
-                                <field-errors name="password_confirmation"></field-errors>
+                           
+                            <div class="col">
+        
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="form-group__title">
-                                Pregunta 2
+                                Pregunta 3: ¿Que sonido hace el gato?
                             </div>
-                            <div class="row">
-                                <div class="col lg:col-1/2 form-control">
-                                    <label for="activity">Actividad en la que se desarrolla principalmente:</label>
-                                    <select-field name="activity"  v-model="fields.activity">
-                                    </select-field>
-                                    <field-errors name="activity"></field-errors>
-                                </div>
-                                <div class="col lg:col-1/2 form-control">
-                                    <label for="category">Categoría:</label>
-                                    <select-field name="category"  v-model="fields.category">
-                                    </select-field>
-                                    <field-errors name="category"></field-errors>
-                                </div>
-                            </div>
+                           
                             <div class="col">
-                                <label for="speciality">Especialidad:</label>
-                                <text-field name="speciality" v-model="fields.speciality" maxlength="120" placeholder="" initial=""></text-field>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 4: ¿Que sonido hace un carro automovil?
+                            </div>
+                           
+                            <div class="col">
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 5: ¿Cual es la escuela?
+                            </div>
+                           
+                            <div class="col">
+                               
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 6: ¿Cual de estos objetos es la televisión?
+                            </div>
+                           
+                            <div class="col">
+                               
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 7: ¿Cual es el circulo?
+                            </div>
+                           
+                            <div class="col">
+                               
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 8: ¿Cual carita esta feliz?
+                            </div>
+                           
+                            <div class="col">
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 9: ¿Que animal esta en la imagen?
+                            </div>
+                           
+                            <div class="col">
+                               
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__title">
+                                Pregunta 10: ¿Cual de estos animales es un perro?
+                            </div>
+                           
+                            <div class="col">
+                                
                             </div>
                         </div>
                         <div class="text-center">

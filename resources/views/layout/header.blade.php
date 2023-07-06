@@ -1,18 +1,18 @@
-<div class="social-bar-container">
+<!-- <div class="social-bar-container">
     <a style="margin-right: 5px;" href="https://www.facebook.com/unipolidgo"><img class="social-icon" src="{{ url('img/svg/facebook.svg') }}" alt=""></a>
     <a style="margin-right: 5px;" href="https://twitter.com/unipolidgo"><img class="social-icon" src="{{ url('img/svg/twitter.svg') }}" alt=""></a>
     <a href="https://www.instagram.com/unipolidgo/"><img class="social-icon" src="{{ url('img/svg/instagram.svg') }}" alt=""></a>
-</div>
+</div> -->
 <site-header
     :logo="'{{ url('img/logo-imac.png') }}'"
     :uri="'{{ url('/') }}'"
     :breakpoint="760"
 >
-    <template slot="button-session">
+    <!-- <template slot="button-session">
         <a style="margin-right: 5px;" href="https://www.facebook.com/unipolidgo"><img class="social-icon" src="{{ url('img/svg/facebook.svg') }}" alt=""></a>
         <a style="margin-right: 5px;" href="https://twitter.com/unipolidgo"><img class="social-icon" src="{{ url('img/svg/twitter.svg') }}" alt=""></a>
         <a href="https://www.instagram.com/unipolidgo/"><img class="social-icon" src="{{ url('img/svg/instagram.svg') }}" alt=""></a>
-    </template>
+    </template> -->
 </site-header>
 
 {{-- <div class="menu__container">

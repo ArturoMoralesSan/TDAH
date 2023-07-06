@@ -48,14 +48,7 @@
                         {{ __('Login') }}
                     </button>
                 </div>
-                <div class="text-center pt-4">
-                    <a href="{{ url('/login/google') }}" class="btn btn--blue w-full">
-                        <div class="google-button__icon">
-                            <img src="{{ url('img/google_icon.png') }}" alt="Google">
-                        </div>
-                        <p class="google-button__text">{{ __('Login with Google') }}</p>
-                    </a>
-                </div>
+              
                 <p class="text_reset-pass m-0">
                     <a href="{{ route('password.request') }}">
                         ¿Olvidaste tu contraseña?

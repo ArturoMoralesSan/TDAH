@@ -5,10 +5,10 @@
                 <img class="main-header__logo-img" :src="logo" alt="">
             </a>
             <p v-if="breakpointMatches" class="main-header-text">
-                TDAH
+                <img src="{{'img/softgical.png'}}" width="50px" height="50px" >
             </p>
             <p v-else class="main-header-text">
-                TDAH
+                <img src="{{'img/softgical.png'}}" width="50px" height="50px" >
             </p>
             <div class="login-container">
                 <slot name="button-session"></slot>

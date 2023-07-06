@@ -75,20 +75,17 @@ class LoginController extends Controller
     public function findOrCreateUser($user, $provider)
     {
         $authUser = User::where('provider_id', $user->id)->first();
-        $role_id  = Role::where('key_name', 'student')->first()->id;
+        $role_id  = Role::where('key_name', 'admin')->first()->id;
         
         if ($authUser) {
             return $authUser;
         }
 
         return User::create([
-            'name'        => $user->user['given_name'],
-            'last_name'   => $user->user['family_name'],
-            'avatar'      => $user->avatar,
-            'email'       => $user->email,
-            'provider'    => $provider,
-            'provider_id' => $user->id,
-            'role_id'     => $role_id
+            'matriculation'        => $user->user['given_name'],
+            'kids_key'   => $user->user['family_name'],
+            'password'      => $user->avatar,
+            
         ]);
     }
 }
