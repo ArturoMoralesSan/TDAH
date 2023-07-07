@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer__col-text d-flex items-center justify-center">
-                    <p class="footer_container-title">
+                    <p class="footer_container-title" >
                         <strong>
                             <img src="{{ asset('img/softgical.png') }}" width="50px" height="50px" >
                             
