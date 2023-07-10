@@ -312,6 +312,10 @@ __webpack_require__.r(__webpack_exports__);
       type: String,
       required: true
     },
+    logotext: {
+      type: String,
+      required: true
+    },
     breakpoint: {
       type: Number,
       required: true
@@ -2423,15 +2427,17 @@ var render = function render() {
     staticClass: "main-header__logo-img",
     attrs: {
       src: _vm.logo,
-      alt: ""
+      alt: "softgical logo"
     }
-  })]), _vm._v(" "), _vm.breakpointMatches ? _c("p", {
-    staticClass: "main-header-text"
-  }, [_vm._v("\n            TDAH\n        ")]) : _c("p", {
-    staticClass: "main-header-text"
-  }, [_vm._v("\n            TDAH\n        ")]), _vm._v(" "), _c("div", {
-    staticClass: "login-container"
-  }, [_vm._t("button-session")], 2)])]);
+  }), _vm._v(" "), _c("img", {
+    staticClass: "main-header__logo-img-text",
+    attrs: {
+      src: _vm.logotext,
+      alt: "softgical letter"
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "main-header__container-menu"
+  }, [_vm._t("menu")], 2)])]);
 };
 var staticRenderFns = [];
 render._withStripped = true;

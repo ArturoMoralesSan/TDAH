@@ -9,7 +9,7 @@ Main menu
     font-size: rem(14);
     z-index: 11;
     @include media($menu-breakpoint) {
-        background-color: $color-gray-lighten-1;
+        background-color: #fff;
     }
 }
 
