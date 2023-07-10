@@ -2413,6 +2413,7 @@ var render = function render() {
   return _c("header", {
     staticClass: "main-header",
     attrs: {
+      id: "main-header",
       role: "banner"
     }
   }, [_c("div", {
@@ -21308,6 +21309,13 @@ __webpack_require__.r(__webpack_exports__);
       toggleMenu: function toggleMenu() {
         this.menuIsVisible = !this.menuIsVisible;
       }
+    }
+  });
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 60) {
+      document.getElementById('main-header').classList.add('main-header-sticky');
+    } else {
+      document.getElementById('main-header').classList.remove('main-header-sticky');
     }
   });
 })();

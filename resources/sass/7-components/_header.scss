@@ -18,6 +18,14 @@ Header
     }
 }
 
+.main-header-sticky {
+    position: fixed !important;
+    width: 100%;
+    z-index: 11;
+    
+}
+
+
 .header__container {
     align-items: center;
     display: flex;
