@@ -1,19 +1,16 @@
 <template>
     <header class="main-header" role="banner">
         <div class="container header__container">
+            
             <a class="main-header__logo-link" :href="uri" title="Inicio">
-                <img class="main-header__logo-img" :src="logo" alt="">
+                <img class="main-header__logo-img" :src="logo" alt="softgical logo">
+                <img class="main-header__logo-img-text" :src="logotext" alt="softgical letter">
             </a>
-            <p v-if="breakpointMatches" class="main-header-text">
-                TDAH
-            </p>
-            <p v-else class="main-header-text">
-                TDAH
-            </p>
-            <div class="login-container">
-                <slot name="button-session"></slot>
-
+            <div class="main-header__container-menu">
+                <slot name="menu"></slot>
             </div>
+            
+            
         </div>
     </header>
 </template>
@@ -26,6 +23,10 @@
                 required: true
             },
             logo: {
+                type:String,
+                required: true
+            },
+            logotext: {
                 type:String,
                 required: true
             },

@@ -6,7 +6,7 @@
 @section('canonical', config('app.url'))
 @section('class', 'home')
 @section('content')
-    <section class="section">
+    <section class="section section--white">
         <div class="container">
             <h2 class="h2 text-center mb-8">Cuestionario para detectar TDAH en niños</h2>
             <div>

@@ -41,19 +41,26 @@ Header
 
 .main-header__logo-link {
     display: inline-block;
-    order: 2;
 
     @include media($menu-breakpoint) {
-
-        width: auto;
-        order: 1;
+        width: auto; 
     }
 }
 
+.main-header__container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header__logo-img-text {
+    height: 13px;
+}
+
 .main-header__logo-img {
-    width: 200px;
+    width: 43px;
     @include media($menu-breakpoint) {
-        width: 220px;
+        width: 43px;
     }
 }
 .main-header-text {
