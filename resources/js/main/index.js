@@ -76,14 +76,5 @@ import Tabs from './components/tabs/Tabs.vue';
             }
         }
     });
-
     
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 60) {
-          document.getElementById('main-header').classList.add('main-header-sticky');
-        } else {
-          document.getElementById('main-header').classList.remove('main-header-sticky');
-        } 
-    });
-
 })();

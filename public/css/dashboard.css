@@ -5356,6 +5356,19 @@ Presentation
   }
 }
 
+.principal-image {
+  max-width: 300px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.principal-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*
 ================================================================================
 Photoswipe (vendor)
@@ -6362,6 +6375,10 @@ Stylized container for grouping contents of a page.
   border-top: 1px solid #e0e3e6;
 }
 
+.principal-section {
+  padding-top: 6rem !important;
+}
+
 /* Background variants
 ============================================================================= */
 .section--light {
@@ -6370,6 +6387,10 @@ Stylized container for grouping contents of a page.
 
 .section--white {
   background-color: #fff;
+}
+
+.section--blue {
+  background-color: #32456a;
 }
 
 /* Size variants
@@ -6883,6 +6904,15 @@ Tags
 .svg-icon {
   width: 15px;
   margin-right: 5px;
+}
+
+.text--white {
+  color: #fff;
+}
+
+.text--softgical {
+  font-weight: 900;
+  color: #f88756;
 }
 
 /*

@@ -23,6 +23,10 @@ $section-padding: $spacer * 4;
 }
 
 
+.principal-section {
+    padding-top: 6rem !important;
+}
+
 /* Background variants
 ============================================================================= */
 
@@ -37,6 +41,10 @@ $section-padding: $spacer * 4;
 
 .section--white {
     background-color: #fff;
+}
+
+.section--blue {
+    background-color: #32456a;
 }
 
 

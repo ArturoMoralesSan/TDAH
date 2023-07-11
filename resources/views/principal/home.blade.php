@@ -6,116 +6,79 @@
 @section('canonical', config('app.url'))
 @section('class', 'home')
 @section('content')
-    <section class="section section--white">
+    <section class="section section--white principal-section">
         <div class="container">
-            <h2 class="h2 text-center mb-8">Cuestionario para detectar TDAH en niños</h2>
-            <div>
-                <login-form action="{{ url('registro-artistas') }}"
-                    enctype="multipart/form-data"
-                    inline-template
-                    v-cloak
-                >
-                    <form>
-                        <div class="form-group">
-                            <div class="form-group__title" aria-description="Pregunta 1">
-                                Pregunta 1: ¿Puedes mostrarme el color rojo?
-                            </div>
-                            <div class="form-control">
-                                <img src="{{ asset('img/Circule_Red.jpg') }}">
-                                <img src="">
-                                <img src="">
-                            </div>
-                           
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 2: ¿Puedes mostrarme un color amarillo que este en la pantalla?
-                            </div>
-                           
-                            <div class="col">
-        
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 3: ¿Que sonido hace el gato?
-                            </div>
-                           
-                            <div class="col">
-                                
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 4: ¿Que sonido hace un carro automovil?
-                            </div>
-                           
-                            <div class="col">
-                                
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 5: ¿Cual es la escuela?
-                            </div>
-                           
-                            <div class="col">
-                               
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 6: ¿Cual de estos objetos es la televisión?
-                            </div>
-                           
-                            <div class="col">
-                               
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 7: ¿Cual es el circulo?
-                            </div>
-                           
-                            <div class="col">
-                               
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 8: ¿Cual carita esta feliz?
-                            </div>
-                           
-                            <div class="col">
-                                
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 9: ¿Que animal esta en la imagen?
-                            </div>
-                           
-                            <div class="col">
-                               
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group__title">
-                                Pregunta 10: ¿Cual de estos animales es un perro?
-                            </div>
-                           
-                            <div class="col">
-                                
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <form-button class="btn--success">
-                                Registrar
-                            </form-button>
-                        </div>
-                    </form>
-                </login-form>
+            <div class="row">
+                <div class="md:col-1/2 principal-text">
+                    <h1 class="text--softgical" >SoftGical - ADHD</h1>
+                    <p>
+                        SoftGical is a project that uses artificial intelligence to detect ADHD in children
+                    </p>
+                </div>
+                <div class="md:col-1/2">
+                    <img class="principal-image" src="{{ asset('img/logo.png')}}" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section section--blue">
+        <div class="container">
+            <div class="row items-center justify-center">
+                <h2 class="text--softgical">
+                What is Softgical's main objective?
+                </h2>
+                <p class="text--white">
+                The main objective of the project is to help detect ADHD in people because the younger they are, the more likely they are to have a better quality of life. With the help of data analysis and machine learning the system will support doctors in the early detection of ADHD.
+                </p>
             </div>
         </div>
     </section>
+    <section class="section section--white">
+        <div class="container">
+            <div class="row">
+                <div class="md:col-1/2">
+                    <img class="principal-image" src="{{ asset('img/logo.png')}}" alt="">
+                </div>
+                <div class="md:col-1/2 principal-text">
+                    <h1>SoftGical - ADHD</h1>
+                    <p>
+                        SoftGical is a project that uses artificial intelligence to detect ADHD in children
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section section--gray">
+        <div class="container">
+            <div class="row">
+                <div class="md:col-1/2 principal-text">
+                    <h1>SoftGical - ADHD</h1>
+                    <p>
+                        SoftGical is a project that uses artificial intelligence to detect ADHD in children
+                    </p>
+                </div>
+                <div class="md:col-1/2">
+                    <img class="principal-image" src="{{ asset('img/logo.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--blue">
+        <div class="container">
+            <div class="row items-center justify-center flex-col">
+                <h2 class="text--softgical">
+                ADHD
+                </h2>
+                <p class="text--white">
+                This video will give a brief description of the main project.
+                </p>
+                <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5cgjV82l1lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection

@@ -26,6 +26,8 @@ Route::get('/', function () {
     return view('principal.home');
 });
 
+Route::view('formulario', 'principal.form');
+
 Auth::routes();
 Route::get('login/{provider}', [LoginController::class, 'redirectToProvider']);
 Route::get('{provider}/callback', [LoginController::class,'handleProviderCallback']);

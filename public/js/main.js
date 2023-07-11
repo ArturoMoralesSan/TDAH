@@ -2411,7 +2411,7 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("header", {
-    staticClass: "main-header",
+    staticClass: "main-header main-header-sticky",
     attrs: {
       id: "main-header",
       role: "banner"
@@ -21309,13 +21309,6 @@ __webpack_require__.r(__webpack_exports__);
       toggleMenu: function toggleMenu() {
         this.menuIsVisible = !this.menuIsVisible;
       }
-    }
-  });
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 60) {
-      document.getElementById('main-header').classList.add('main-header-sticky');
-    } else {
-      document.getElementById('main-header').classList.remove('main-header-sticky');
     }
   });
 })();

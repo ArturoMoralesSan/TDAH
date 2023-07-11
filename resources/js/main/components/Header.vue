@@ -1,5 +1,5 @@
 <template>
-    <header id="main-header" class="main-header" role="banner">
+    <header id="main-header" class="main-header main-header-sticky" role="banner">
         <div class="container header__container">
             
             <a class="main-header__logo-link" :href="uri" title="Inicio">
