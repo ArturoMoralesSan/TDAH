@@ -475,7 +475,7 @@ html {
 }
 
 body {
-  background-color: #F5F6F8;
+  background-color: #000;
   color: #505963;
   padding: 0;
 }
@@ -749,6 +749,133 @@ The box object is just a container with some padding for breathing room.
 
 .box--2xl {
   padding: 3rem;
+}
+
+.row-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.col-grid-1-3 {
+  grid-column: span 1;
+}
+
+.db-panel__form {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+}
+
+.db-panel__form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.db-panel__title-form {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.db-panel__form p {
+  margin: 8px 0;
+  font-size: 1em;
+  color: #444;
+}
+
+.db-panel__form p span {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.db-panel__footer {
+  margin-top: 20px;
+}
+
+.db-panel__footer a {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.db-panel__footer a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.db-panel__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.db-panel__detail-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  justify-content: center;
+}
+
+.db-panel__detail-icon {
+  font-size: 1.4em;
+  color: #007BFF;
+}
+
+.db-panel__detail-text {
+  font-size: 1em;
+  color: #333;
+}
+
+.db-panel__status {
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.db-panel__status.completed {
+  color: #28a745;
+  background-color: #eaf8ec;
+}
+
+.db-panel__status.pending {
+  color: #dc3545;
+  background-color: #fdecea;
+}
+
+.db-panel__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 /*
@@ -2686,7 +2813,7 @@ Show feedback to users in a nice dedicated container.
 }
 
 .announcement-title {
-  color: #0ba5a7;
+  color: #e36f3e;
   font-weight: bold;
 }
 
@@ -2702,8 +2829,8 @@ Show feedback to users in a nice dedicated container.
 }
 
 .announcement-filter-button--active {
-  border: 1px solid #0ba5a7 !important;
-  background-color: #0ba5a7 !important;
+  border: 1px solid #e36f3e !important;
+  background-color: #e36f3e !important;
   color: #fff !important;
 }
 
@@ -2989,7 +3116,7 @@ Optionally, color variants can easily be created with the `button` mixin.
 /* Types
 ============================================================================= */
 .btn--primary {
-  background-color: #0ba5a7;
+  background-color: #e36f3e;
   border: 1px solid transparent;
   color: #fff;
   transition: background-color 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out;
@@ -3001,17 +3128,17 @@ Optionally, color variants can easily be created with the `button` mixin.
 }
 
 .btn--primary:focus, .btn--primary:hover {
-  background-color: #0cb3b5;
+  background-color: #e5794b;
   border-color: transparent;
 }
 
 .btn--primary:active {
-  background-color: #087677;
+  background-color: #d0531e;
   border-color: transparent;
 }
 
 .btn--primary:disabled:focus, .btn--primary:disabled:hover, .btn--primary:disabled:active {
-  background-color: #0ba5a7;
+  background-color: #e36f3e;
   border-color: transparent;
   color: #fff;
 }
@@ -3266,35 +3393,35 @@ default state. They can be created with the `button-outline` mixin.
 */
 .btn--outline-primary {
   background-color: transparent;
-  border: 1px solid #0ba5a7;
-  color: #0ba5a7;
+  border: 1px solid #e36f3e;
+  color: #e36f3e;
   transition: background-color 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out;
 }
 
 .btn--outline-primary:focus, .btn--outline-primary:hover, .btn--outline-primary:active {
-  color: #065e5f;
+  color: #ba4a1b;
   text-decoration: none;
 }
 
 .btn--outline-primary:focus, .btn--outline-primary:hover {
   background-color: transparent;
-  border-color: #065e5f;
+  border-color: #ba4a1b;
 }
 
 .btn--outline-primary:active {
   background-color: transparent;
-  border-color: #0ba5a7;
+  border-color: #e36f3e;
 }
 
 .btn--outline-primary:disabled:focus, .btn--outline-primary:disabled:hover, .btn--outline-primary:disabled:active {
   background-color: transparent;
-  border-color: #0ba5a7;
-  color: #0ba5a7;
+  border-color: #e36f3e;
+  color: #e36f3e;
 }
 
 .btn--outline-primary.btn--loading::after {
-  border-right-color: #0ba5a7;
-  border-top-color: #0ba5a7;
+  border-right-color: #e36f3e;
+  border-top-color: #e36f3e;
 }
 
 /*
@@ -3449,8 +3576,37 @@ default state. They can be created with the `button-outline` mixin.
   display: block;
   padding: 0.5em 1em;
   font-size: 13px;
-  border: 1px solid #000000;
-  color: #000000;
+  background-color: #e36f3e;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: background-color 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out;
+  box-shadow: 0 0 10px 3px #eb8d659e;
+}
+
+.btn-login-menu:focus, .btn-login-menu:hover, .btn-login-menu:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-login-menu:focus, .btn-login-menu:hover {
+  background-color: #e68054;
+  border-color: transparent;
+}
+
+.btn-login-menu:active {
+  background-color: #d0531e;
+  border-color: transparent;
+}
+
+.btn-login-menu:disabled:focus, .btn-login-menu:disabled:hover, .btn-login-menu:disabled:active {
+  background-color: #e36f3e;
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn-login-menu.btn--loading::after {
+  border-right-color: #fff;
+  border-top-color: #fff;
 }
 
 .btn-login-user-icon {
@@ -3497,6 +3653,42 @@ default state. They can be created with the `button-outline` mixin.
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn--login {
+  background-color: #e36f3e;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: background-color 150ms ease-out, border-color 150ms ease-out, color 150ms ease-out;
+  margin-top: 25px;
+  font-weight: bold;
+  box-shadow: 0 0 10px 3px #eb8d659e;
+}
+
+.btn--login:focus, .btn--login:hover, .btn--login:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn--login:focus, .btn--login:hover {
+  background-color: #e68054;
+  border-color: transparent;
+}
+
+.btn--login:active {
+  background-color: #d0531e;
+  border-color: transparent;
+}
+
+.btn--login:disabled:focus, .btn--login:disabled:hover, .btn--login:disabled:active {
+  background-color: #e36f3e;
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn--login.btn--loading::after {
+  border-right-color: #fff;
+  border-top-color: #fff;
 }
 
 /*
@@ -3741,7 +3933,7 @@ completely functional and accessible.
 }
 
 .footer__container-logo {
-  background-color: #0ba5a7;
+  background-color: #e36f3e;
   padding: 30px 0;
 }
 
@@ -4004,6 +4196,7 @@ Requires javascript for full functionality.
   height: 100%;
   padding: 0;
   margin: 0;
+  margin-top: 75px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4060,6 +4253,76 @@ Requires javascript for full functionality.
 
 .search-form-width {
   width: 100%;
+}
+
+.separator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  padding-bottom: 80px;
+}
+
+.form-title {
+  color: #fff;
+  font-weight: 800;
+}
+
+.form-input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #cfd4d8;
+  color: #fff;
+  border-radius: 0;
+}
+
+.form-input:focus-visible {
+  outline: 0;
+}
+
+.form-input:focus {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 0 0px #fff;
+}
+
+.login-separator {
+  border-top: 5px solid #e36f3e;
+  width: 75px;
+  border-radius: 4px;
+  height: 0;
+}
+
+.form-350 {
+  width: 350px;
+}
+
+.form-link {
+  color: #e36f3e;
+  text-decoration: none;
+}
+
+.form-link:hover {
+  color: #d4683a;
+  text-decoration: none;
+}
+
+.divider-form-login {
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.divider-form-login:before, .divider-form-login:after {
+  background-color: #949398;
+  content: "";
+  flex: 1 1;
+  margin: 5px;
+  padding: 0.2px;
+}
+
+.divider-form-login-span {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*
@@ -4208,11 +4471,10 @@ Header
 ================================================================================
 */
 .main-header {
+  background: #000000c9;
   color: #000;
   min-width: 320px;
-  background-color: #fff;
   position: relative;
-  box-shadow: 0px 1px 7px 0px #888888;
 }
 
 @media (min-width: 47.5em) {
@@ -4274,12 +4536,12 @@ Header
 }
 
 .main-header__logo-img {
-  width: 43px;
+  width: 80px;
 }
 
 @media (min-width: 47.5em) {
   .main-header__logo-img {
-    width: 43px;
+    width: 110px;
   }
 }
 
@@ -4497,6 +4759,24 @@ Header
   }
 }
 
+.icon-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container--blue {
+  background-color: #5193E7;
+}
+
+.icon-image {
+  height: 30px;
+}
+
 .file-link--doc::before {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -4701,7 +4981,7 @@ Main menu
 
 @media (min-width: 47.5em) {
   .main-menu {
-    background-color: #fff;
+    margin-right: 30px;
   }
 }
 
@@ -4947,19 +5227,19 @@ Main menu
 
 .main-menu__link:focus, .main-menu__link:hover, .main-menu__link:active {
   background-color: #f9fafa;
-  color: #0ba5a7;
+  color: #e36f3e;
   text-decoration: none;
 }
 
 @media (min-width: 47.5em) {
   .main-menu__link {
     background-color: transparent;
-    color: #505963;
+    color: #ffffff;
     padding: 0.25em 2em;
     transition: color 150ms ease-out;
   }
   .main-menu__link--active {
-    color: #0ba5a7;
+    color: #e36f3e;
   }
   .main-menu__link:focus, .main-menu__link:hover, .main-menu__link:active {
     background-color: transparent;
@@ -6416,9 +6696,39 @@ Stylized container for grouping contents of a page.
 }
 
 .section--corporate {
-  background: #f9fafa url("../img/ujed-bg.svg") no-repeat center center;
+  background: #000 url("../img/fondo-login.jpg");
+  background-position: center 25%;
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  height: 100vh;
+}
+
+.section--objective {
+  background: #000 url("../img/objetive.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section--blockchain {
+  background: #000 url("../img/blockchain.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section--python {
+  background: #000 url("../img/python.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section--neuronal {
+  background: #000 url("../img/neuronal.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-brand {
@@ -6508,7 +6818,7 @@ of a pure BEM approach to avoid unnecessary CSS classes.
 }
 
 .table--header-primary thead {
-  background-color: #0ba5a7;
+  background-color: #e36f3e;
   color: #fff;
 }
 
@@ -6822,7 +7132,7 @@ Tabs
 }
 
 .tabs__li:focus, .tabs__li:hover, .tabs__li:active {
-  border-color: #0ba5a7;
+  border-color: #e36f3e;
 }
 
 .tabs--sm .tabs__li {
@@ -6845,13 +7155,13 @@ Tabs
 }
 
 .tabs__li[aria-selected="true"] {
-  background-color: #0ba5a7;
+  background-color: #e36f3e;
   border-color: transparent;
   color: #fff;
 }
 
 .tabs__li[aria-selected="true"]:focus, .tabs__li[aria-selected="true"]:hover, .tabs__li[aria-selected="true"]:active {
-  background-color: #0ba5a7;
+  background-color: #e36f3e;
   cursor: auto;
 }
 
@@ -6913,6 +7223,19 @@ Tags
 .text--softgical {
   font-weight: 900;
   color: #f88756;
+}
+
+.title-separator {
+  border-top: 2px solid #e36f3e;
+  width: 193px;
+  border-radius: 4px;
+  height: 0;
+  margin-top: 40px;
+}
+
+.text-container {
+  width: 80%;
+  padding-left: 30px;
 }
 
 /*
@@ -7290,6 +7613,20 @@ Dashboard main
   font-size: 12px;
 }
 
+.video-responsive {
+  position: relative;
+  width: 90%;
+  height: 60vh;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*
 ================================================================================
 Print styles
@@ -7366,7 +7703,7 @@ Background colors
 }
 
 .bg-primary {
-  background-color: #0ba5a7;
+  background-color: #e36f3e;
 }
 
 .bg-black {
@@ -7866,7 +8203,7 @@ Border color
 }
 
 .border-primary {
-  border-color: #0ba5a7 !important;
+  border-color: #e36f3e !important;
 }
 
 .border-black {
@@ -10956,7 +11293,7 @@ Color
 }
 
 .color-primary {
-  color: #0ba5a7;
+  color: #e36f3e;
 }
 
 .color-black {
@@ -11120,7 +11457,7 @@ Color
     color: transparent;
   }
   .sm\:color-primary {
-    color: #0ba5a7;
+    color: #e36f3e;
   }
   .sm\:color-black {
     color: #000;
@@ -11246,7 +11583,7 @@ Color
     color: transparent;
   }
   .md\:color-primary {
-    color: #0ba5a7;
+    color: #e36f3e;
   }
   .md\:color-black {
     color: #000;
@@ -11372,7 +11709,7 @@ Color
     color: transparent;
   }
   .lg\:color-primary {
-    color: #0ba5a7;
+    color: #e36f3e;
   }
   .lg\:color-black {
     color: #000;
