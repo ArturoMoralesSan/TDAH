@@ -21,11 +21,7 @@ class ProfileController extends Controller
     {
         $user = Auth::user();
 
-        if ($request->hasFile('avatar')) {
-            $user->avatar = $this->saveAvatar($user, $request->file('avatar'));
-        }
-
-        $user->fill($request->only(['full_name']));
+        $user->fill($request->only(['name','lastname']));
         $user->save();
 
         alert('Se han actualizado los datos.');
