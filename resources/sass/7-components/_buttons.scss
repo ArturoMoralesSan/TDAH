@@ -231,8 +231,11 @@ default state. They can be created with the `button-outline` mixin.
     display: block;
     padding: 0.5em 1em;
     font-size: 13px;
-    border: 1px solid #000000;
-    color: #000000;
+    @include button((
+        background-color: #e36f3e,
+        text-color: #fff
+    ));
+    box-shadow: 0 0 10px 3px #eb8d659e;
 
 }
 
@@ -252,3 +255,13 @@ default state. They can be created with the `button-outline` mixin.
     align-items: center;
     justify-content: center;
 }
+.btn--login {
+    @include button((
+        background-color: #e36f3e,
+        text-color: #fff
+    ));
+    margin-top: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 10px 3px #eb8d659e;
+}
+

@@ -8,6 +8,7 @@
     import SelectField from './SelectField.vue';
     import TextArea from './TextArea.vue';
     import TextField from './TextField.vue';
+    import SearchSelectField from './SearchSelectField.vue';
 
     export default {
         components: {
@@ -18,7 +19,8 @@
             SelectField,
             TextArea,
             TextField,
-            DateField
+            DateField,
+            SearchSelectField
         },
 
         props: {

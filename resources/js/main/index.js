@@ -15,8 +15,10 @@ import StatusProjectForm from './components/forms/status-project-form/StatusProj
 import CallPeriodsForm from './components/forms/call-periods-form/CallPeriodsForm.vue';
 import ButtonSearch from './components/ButtonSearch.vue';
 import TruncatedText from './components/TruncatedText.vue';
-
+import Parallax from './components/Parallax.vue';
 import Tabs from './components/tabs/Tabs.vue';
+
+import RegistrationForm from './components/forms/question-form/RegistrationForm.vue';
 
 (function() {
     /* Base components
@@ -27,6 +29,8 @@ import Tabs from './components/tabs/Tabs.vue';
     Vue.component('project-registration-form', ProjectRegistrationForm);
     Vue.component('status-project-form', StatusProjectForm);
     Vue.component('call-periods-form', CallPeriodsForm);
+
+    Vue.component('registration-form', RegistrationForm);
 
 
     /* App components
@@ -41,7 +45,7 @@ import Tabs from './components/tabs/Tabs.vue';
     Vue.component('button-search', ButtonSearch);
     Vue.component('filter-component', Filters);
     Vue.component('truncated-text', TruncatedText);
-
+    Vue.component('parallax', Parallax);
     Vue.component('tabs-component', Tabs);
 
     /**

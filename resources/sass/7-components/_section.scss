@@ -72,9 +72,40 @@ $section-padding: $spacer * 4;
 }
 
 .section--corporate {
-    background: $color-gray-lighten-5 url("../img/ujed-bg.svg") no-repeat center center;
+    background: #000 url("../img/fondo-login.jpg");
+    background-position: center 25%;
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    height: 100vh;
+}
+
+.section--objective {
+    background: #000 url("../img/objetive.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section--blockchain {
+    background: #000 url("../img/blockchain.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.section--python {
+    background: #000 url("../img/python.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section--neuronal {
+    background: #000 url("../img/neuronal.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-brand {

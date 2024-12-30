@@ -8,11 +8,11 @@
 
 // Change this value to match your brand color.
 
-$color-primary: #0ba5a7 !default;
+$color-primary: #e36f3e !default;
 $color-light-blue:     #2e7ea4;
 $color-blue-gray:      #f0f7fa;
-$color-menu-text: #0ba5a7;
-$color-red: #0ba5a7;
+$color-menu-text: #e36f3e;
+$color-red: #e36f3e;
 
 
 // =============================================================================
@@ -66,9 +66,9 @@ $color-blue-darken-5:  darken($color-blue, 35%) !default;
 // =============================================================================
 
 
-$color-db-green:       #53832D !default;
+$color-db-orange-light :#e57b4d !default;
 $color-db-orange:      #e75a5d !default;
-$color-db-primary:     $color-db-green !default;
+$color-db-primary:     $color-db-orange-light !default;
 
 
 // Submenu.

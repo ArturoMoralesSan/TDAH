@@ -37,9 +37,9 @@ Dashboard panel
     text-transform: none;
 }
 
-.db-panel__advice {
-    background: #C6DA85;
-    padding: 25px;
-    border-radius: 10px;
-
+.db-panel__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }

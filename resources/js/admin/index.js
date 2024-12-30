@@ -24,6 +24,8 @@ import NewsForm from './components/forms/NewsForm.vue';
 import FormSearch from './components/FormSearch.vue';
 import SelectFilter from './components/SelectFilter.vue';
 
+import RegistrationForm from '../main/components/forms/question-form/RegistrationForm.vue';
+
 
 (function() {
     /* Base components
@@ -55,6 +57,8 @@ import SelectFilter from './components/SelectFilter.vue';
     Vue.component('form-search', FormSearch);
     Vue.component('select-filter', SelectFilter);
     Vue.component('project-registration-form', ProjectRegistrationForm);
+
+    Vue.component('registration-form', RegistrationForm);
 
 
     const vm = new Vue({

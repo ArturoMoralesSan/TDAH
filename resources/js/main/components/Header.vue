@@ -4,7 +4,6 @@
             
             <a class="main-header__logo-link" :href="uri" title="Inicio">
                 <img class="main-header__logo-img" :src="logo" alt="softgical logo">
-                <img class="main-header__logo-img-text" :src="logotext" alt="softgical letter">
             </a>
             <div class="main-header__container-menu">
                 <slot name="menu"></slot>
@@ -23,10 +22,6 @@
                 required: true
             },
             logo: {
-                type:String,
-                required: true
-            },
-            logotext: {
                 type:String,
                 required: true
             },
