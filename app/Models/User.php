@@ -39,14 +39,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     
-    protected $appends = ['list_product'];
-
-
-
-
-    public function getListProductAttribute() {
-        return $this->equipments->implode('product', ', ');
-    }
 
     /*
     |--------------------------------------------------------------------------
@@ -109,15 +101,5 @@ class User extends Authenticatable
     | Relationships
     |--------------------------------------------------------------------------
     */
-
-    /**
-     * A permission can be applied to many roles.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function equipments()
-    {
-        return $this->belongsToMany(Equipment::class)->withPivot('quantity');
-    }
 
 }
