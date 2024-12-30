@@ -18,11 +18,8 @@
                 Contraseña
             </h3>
 
-            @alert(['class' => 'alert--has-icon size-caption'])
-            @endalert
-
-
-            <base-form action="{{ url('admin/perfil/cambiar-contrasena') }}" inline-template>
+            @include('components.alert')
+            <base-form action="{{ url('admin/perfil/cambiar-contrasena') }}" inline-template method="PUT">
                 <form>
                     {{-- Current password --}}
                     <div class="form-control">
@@ -69,13 +66,10 @@
                     </div>
 
                     <div class="text-center">
-                        <form-button class="btn--dashboard btn--full-width"></form-button>
+                        <form-button class="btn--blue--dashboard btn--wide"></form-button>
                     </div>
                 </form>
             </base-form>
-
-
-
 
         </section>
     </div>

@@ -7,7 +7,7 @@
 @section('has_gallery', 'true')
 
 @section('content')
-
+    @include('components.alert')
     <div class="dashboard-heading">
         <h1 class="dashboard-heading__title">
             Actualizar perfil
@@ -15,9 +15,8 @@
     </div>
 
     <div class="fluid-container mb-16">
-        <profile-form action="{{ url('admin/perfil/editar') }}"
-            avatar="{{ $authUser->avatar }}"
-            enctype="multipart/form-data"
+        <base-form action="{{ url('admin/perfil/editar') }}"
+            method="PUT"
             inline-template
             v-cloak
         >
@@ -28,75 +27,36 @@
                     </h3>
 
                     <div class="md:row">
-                        <div class="md:col-2/3">
+                        <div class="md:col-1/2">
 
                             {{-- Name --}}
                             <div class="form-control">
-                                <label for="full_name">Nombre completo</label>
-                                <text-field name="full_name" v-model="fields.full_name" maxlength="160" initial="{{ $authUser->full_name }}"></text-field>
+                                <label for="name">Nombre</label>
+                                <text-field name="name" v-model="fields.name" maxlength="160" initial="{{ $authUser->name }}"></text-field>
 
-                                <field-errors name="full_name"></field-errors>
+                                <field-errors name="name"></field-errors>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="db-panel mb-16">
-                    <h3 class="db-panel__title">
-                        Avatar
-                    </h3>
-                    <div class="md:row">
-                        <div class="preview-aside">
-                            <figure class="preview-aside__box preview-box">
-                                <profile-gallery-card
-                                    :link="$root.path + '/archivos/avatars/' + (hasAvatar ? avatar : 'default.png')"
-                                    :thumb="$root.path + '/archivos/avatars/' + (hasAvatar ? avatar : 'default.png')"
-                                    :images="[{
-                                        src: $root.path + '/archivos/avatars/' + (hasAvatar ? avatar : 'default.png'),
-                                        w: 68,
-                                        h: 68
-                                    }]"
-                                    inline-template
-                                >
-                                    <a target="_blank" :href="link" @click.prevent="onClick">
-                                        <img class="preview-box__img" :src="thumb" alt="" ref="thumb">
-                                    </a>
-                                </profile-gallery-card>
+                        <div class="md:col-1/2">
 
-                                <figcaption class="preview-box__caption">
-                                    Imagen actual
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="md:col-2/3">
-                            {{-- Avatar --}}
+                            {{-- Name --}}
                             <div class="form-control">
-                                <label for="avatar" v-text="hasAvatar ? 'Reemplazar imagen' : 'Agregar imagen'"></label>
+                                <label for="lastname">Apellidos</label>
+                                <text-field name="lastname" v-model="fields.lastname" maxlength="160" initial="{{ $authUser->lastname }}"></text-field>
 
-                                <file-field name="avatar" v-model="fields.avatar"></file-field>
-
-                                <field-errors name="avatar"></field-errors>
-                                <ul id="avatar-specs" class="description color-gray-darken-1">
-                                    <li>
-                                        Tamaño máximo: 1 MB.
-                                    </li>
-                                    <li>
-                                        Sólo archivos con extensión jpeg, gif, png.
-                                    </li>
-                                </ul>
-
+                                <field-errors name="lastname"></field-errors>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <div class="text-center">
-                    <form-button class="btn--dashboard btn--wide">
+                    <form-button class="btn--blue--dashboard btn--wide">
                         Actualizar
                     </form-button>
                 </div>
             </form>
-        </profile-form>
+        </base-form>
 
     </div>
 

@@ -38,6 +38,7 @@
         <!-- CSS -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&display=swap" rel="stylesheet">
         <link href="{{ version('css/main.css') }}" rel="stylesheet">
+
     </head>
     <body class="@yield('class')" data-root="{{ url('/') }}">
         <div id="app">
@@ -52,7 +53,7 @@
                 @yield('content')
             </main>
 
-            @include('layout.footer')
+            <!-- @include('layout.footer') -->
 
             <site-overlay></site-overlay>
 

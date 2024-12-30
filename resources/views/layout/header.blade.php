@@ -1,6 +1,5 @@
 <site-header
-    :logo="'{{ url('img/logo-softgical.png') }}'"
-    :logotext="'{{ url('img/softgical.png') }}'"
+    :logo="'{{ url('img/logosg.png') }}'"
     :uri="'{{ url('/') }}'"
     :breakpoint="760"
 > 
@@ -8,8 +7,10 @@
         <site-menu
         :breakpoint="760"
         :links="{
-            'Inicio': '{{ url('/') }}',
-            'formulario': '{{ url('formulario') }}',
+            'INICIO': '{{ url('/') }}',
+            'OBJECTIVE': '{{ url('#objective') }}',
+            'BLOCKCHAIN': '{{ url('#blockchain') }}',
+            'FAQ' : '{{ url('#faq') }}',
         }"
         active-link="{{ $activeLink }}"
         >
@@ -18,7 +19,7 @@
             </template>
         </site-menu>
         @guest
-            <a href="{{ url('iniciar-sesion') }}" class="btn btn-login-menu">
+            <a href="{{ url('login') }}" class="btn btn-login-menu">
                 <img class="img-user-login" src="{{ url('img/header/user.svg') }}">
                 Ingresar
             </a>

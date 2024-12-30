@@ -78,9 +78,6 @@
                                         <img style="width: 15px;" class="svg-icon" src="{{ url('img/svg/trash.svg')}}">
                                         Eliminar
                                     </delete-button>
-                                    
-
-
                                 </td>
                             </tr>
                         </tbody>
