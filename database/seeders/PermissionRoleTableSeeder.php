@@ -38,11 +38,9 @@ class PermissionRoleTableSeeder extends Seeder
     private function getData()
     {
         return [
-            'student' => [
+            'neuropediatrician' => [
                 'update.profile',
                 'update.password',
-                'view.vouchers',
-                'view.reports',
             ]
         ];
     }

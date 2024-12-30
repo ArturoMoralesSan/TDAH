@@ -113,94 +113,116 @@ class DashboardTablesSeeder extends Seeder
                 ]
             ],
             [
-                'name' => 'Inventario',
-                'tile' => 'inventory.svg',
+                'name' => 'Pacientes',
+                'tile' => 'lock.svg',
                 'submenus' => [
                     [
-                        'name' => 'Equipo / material',
-                        'icon' => 'users.svg',
+                        'name' => 'pacientes',
+                        'icon' => 'permissions.svg',
                         'links' => [
                             [
-                                'name'       => 'Agregar equipo / material',
-                                'route'      => 'agregar-equipo',
-                                'permission' => 'create.equipment'
+                                'name'       => 'Agregar pacientes',
+                                'route'      => 'agregar-pacientes',
+                                'permission' => 'create.patient'
                             ],
                             [
-                                'name'       => 'Lista de equipo / material',
-                                'route'      => 'equipo',
-                                'permission' => 'view.equipment'
-                            ],
+                                'name'       => 'Lista de pacientes',
+                                'route'      => 'pacientes',
+                                'permission' => 'view.patient'
+                            ]
                         ]
                     ],
-                ]
-            ],
-            [
-                'name' => 'Asignación de equipo',
-                'tile' => 'assignment.svg',
-                'submenus' => [
                     [
-                        'name' => 'Asignación de equipo',
-                        'icon' => 'users.svg',
+                        'name' => 'Análisis',
+                        'icon' => 'role.svg',
                         'links' => [
                             [
-                                'name'       => 'Asignar equipo / material',
-                                'route'      => 'asignar-equipo',
-                                'permission' => 'create.assign_equipment'
+                                'name'       => 'Agregar análisis',
+                                'route'      => 'agregar-analisis',
+                                'permission' => 'create.analysis'
                             ],
                             [
-                                'name'       => 'Lista de equipo / material',
-                                'route'      => 'equipo',
-                                'permission' => 'view.equipment'
-                            ],
+                                'name'       => 'Lista de análisis',
+                                'route'      => 'analisis',
+                                'permission' => 'view.analysis'
+                            ]
                         ]
                     ],
-                ]
-            ],
-            [
-                'name' => 'Vales de material',
-                'tile' => 'ticket.svg',
-                'submenus' => [
                     [
-                        'name' => 'Vales de material',
+                        'name' => 'Reportes',
                         'icon' => 'users.svg',
                         'links' => [
                             [
-                                'name'       => 'Agregar vale de equipo / material',
-                                'route'      => 'agregar-vale-material',
-                                'permission' => 'create.vouchers'
-                            ],
-                            [
-                                'name'       => 'Lista de vales de equipo / material',
-                                'route'      => 'vales-equipo',
-                                'permission' => 'view.vouchers'
-                            ],
-                        ]
-                    ],
-                ]
-            ],
-            [
-                'name' => 'Reportes de equipo dañado',
-                'tile' => 'damaged-equipment.svg',
-                'submenus' => [
-                    [
-                        'name' => 'Reportes de daño',
-                        'icon' => 'users.svg',
-                        'links' => [
-                            [
-                                'name'       => 'Agregar un reporte',
-                                'route'      => 'agregar-reporte',
+                                'name'       => 'Agregar reportes',
+                                'route'      => 'agregar-reportes',
                                 'permission' => 'create.reports'
                             ],
                             [
                                 'name'       => 'Lista de reportes',
                                 'route'      => 'reportes',
                                 'permission' => 'view.reports'
+                            ]
+                        ],
+                    ],
+                    
+                ]
+            ],
+            [
+                'name' => 'Diagnostico',
+                'tile' => 'lock.svg',
+                'submenus' => [
+                    [
+                        'name' => 'Diagnostico',
+                        'icon' => 'permissions.svg',
+                        'links' => [
+                            [
+                                'name'       => 'Agregar diagnostico',
+                                'route'      => 'agregar-diagnostico',
+                                'permission' => 'create.patient'
                             ],
+                            [
+                                'name'       => 'Lista de diagnosticos',
+                                'route'      => 'diagnosticos',
+                                'permission' => 'view.diagnostics'
+                            ]
                         ]
                     ],
+                    [
+                        'name' => 'Preguntas',
+                        'icon' => 'role.svg',
+                        'links' => [
+                            [
+                                'name'       => 'Agregar preguntas',
+                                'route'      => 'agregar-preguntas',
+                                'permission' => 'create.questions'
+                            ],
+                            [
+                                'name'       => 'Lista de preguntas',
+                                'route'      => 'preguntas',
+                                'permission' => 'view.questions'
+                            ]
+                        ]
+                    ],
+                    [
+                        'name' => 'formularios',
+                        'icon' => 'users.svg',
+                        'links' => [
+                            [
+                                'name'       => 'Agregar formulario',
+                                'route'      => 'agregar-formulario',
+                                'permission' => 'create.diagnosticsforms'
+                            ],
+                            [
+                                'name'       => 'Lista de formularios',
+                                'route'      => 'formularios',
+                                'permission' => 'view.diagnosticsforms'
+                            ]
+                        ],
+                    ],
+                    
                 ]
-            ]
-
+            ],
+            
         ];
     }
 }

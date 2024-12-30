@@ -40,23 +40,23 @@ class PermissionTableSeeder extends Seeder
             'update.profile'  => 'Cambiar Perfil',
 
             /*
-             * equipment
+             * Patient
              */
-            'view.equipment'   => 'Ver material / equipo',
-            'create.equipment' => 'Agregar material / equipo',
-            'edit.equipment'   => 'Editar material / equipo',
-            'delete.equipment' => 'Eliminar material / equipo',
+            'view.patient'   => 'Ver pacientes',
+            'create.patient' => 'Agregar pacientes',
+            'edit.patient'   => 'Editar pacientes',
+            'delete.patient' => 'Eliminar pacientes',
 
             /*
-             * equipment
+             * Analysis
              */
-            'view.assign_equipment'   => 'Ver material / equipo asignado',
-            'create.assign_equipment' => 'asignar material / equipo',
-            'edit.assign_equipment'   => 'Editar material / equipo asignado',
-            'delete.assign_equipment' => 'Eliminar material / equipo asignado',
+            'view.analysis'   => 'Ver análisis',
+            'create.analysis' => 'asignar análisis ',
+            'edit.analysis'   => 'Editar análisis',
+            'delete.analysis' => 'Eliminar análisis',
 
             /*
-             * permission
+             * Permission
              */
             'view.permissions'   => 'Ver permisos',
             'create.permissions' => 'Agregar permisos',
@@ -64,7 +64,7 @@ class PermissionTableSeeder extends Seeder
             'delete.permissions' => 'Eliminar permisos',
 
             /*
-             * permission
+             * Roles
              */
             'view.roles'   => 'Ver roles',
             'create.roles' => 'Agregar roles',
@@ -72,26 +72,40 @@ class PermissionTableSeeder extends Seeder
             'delete.roles' => 'Eliminar roles',
 
             /*
-             * vouchers
+             * Reports
              */
-            'view.vouchers'   => 'Ver vales',
-            'create.vouchers' => 'Agregar vales',
-            'edit.vouchers'   => 'Editar vales',
-            'delete.vouchers' => 'Eliminar vales',
-
-            /*
-             * reports
-             */
-            'view.reports'   => 'Ver Reportes de daño',
-            'create.reports' => 'Agregar Reportes de daño',
-            'edit.reports'   => 'Editar Reportes de daño',
-            'delete.reports' => 'Eliminar Reportes de daño',
+            'view.reports'   => 'Ver Reportes',
+            'create.reports' => 'Agregar Reportes',
+            'edit.reports'   => 'Editar Reportes',
+            'delete.reports' => 'Eliminar Reportes',
 
             /*
              * Users
              */
             'view.users'   => 'Ver Usuarios',
             'create.users' => 'Agregar usuarios',
+
+            /*
+             * Users
+             */
+
+            'view.diagnostics'   => 'Ver diagnosticos',
+            'create.diagnostics' => 'Agregar diagnosticos',
+
+            /*
+             * questions
+             */
+            
+            'view.questions'   => 'Ver preguntas',
+            'create.questions' => 'Agregar preguntas',
+
+            /*
+             * questions
+             */
+            
+             'view.diagnosticsforms'   => 'Ver formularios',
+             'create.diagnosticsforms' => 'Agregar formularios',
+             
         ];
     }
 }

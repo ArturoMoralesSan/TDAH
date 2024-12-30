@@ -33,10 +33,8 @@ class RoleTableSeeder extends Seeder
     private function getData()
     {
         return [
-            'superadmin'      => 'Super Administrador',
-            'student'         => 'Alumno',
-            'teacher'         => 'Docente',
-            'Administrative'  => 'Administrativo'
+            'superadmin'        => 'Super Administrador',
+            'neuropediatrician' => 'Neuro Pediatra',
         ];
     }
 }
