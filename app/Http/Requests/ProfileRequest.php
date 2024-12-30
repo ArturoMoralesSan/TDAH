@@ -13,8 +13,8 @@ class ProfileRequest extends FormRequest
     public function rules()
     {
         return [
-            'full_name' => 'required|string|max:160',
-            'avatar'    => 'mimes:jpeg,gif,png|max:1024'
+            'name' => 'required|string|max:160',
+            'lastname' => 'required|string|max:160',
         ];
     }
 
@@ -27,10 +27,10 @@ class ProfileRequest extends FormRequest
     public function messages()
     {
         return [
-            'full_name.string'      => 'El nombre debe ser una cadena de caracteres.',
-            'full_name.max'         => 'El nombre no debe exceder :max caracteres.',
-            'avatar.mimes'     => 'La imagen debe ser un archivo de tipo JPG, GIF o PNG.',
-            'avatar.max'       => 'La imagen no debe ser mayor que :max kilobytes.'
+            'name.string'      => 'El nombre debe ser una cadena de caracteres.',
+            'name.max'         => 'El nombre no debe exceder :max caracteres.',
+            'lastname.string'      => 'El nombre debe ser una cadena de caracteres.',
+            'lastname.max'         => 'El nombre no debe exceder :max caracteres.',
         ];
     }
 }
