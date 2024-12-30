@@ -20,6 +20,18 @@ class UpdatePasswordRequest extends FormRequest
         ];
     }
 
+    /**
+     * Get custom messages for validator errors.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'password.confirmed'  => 'El campo confirmar contraseña no coincide.',
+        ];
+    }
+
 
     /**
      * Validate that the current password is correct.
